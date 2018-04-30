@@ -11,7 +11,7 @@ if strcmp(location,'Home')
     addpath('C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\4. Alphas (new)\14.bog_sog')
     addpath('C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\4. Alphas (new)\14.bog_sog\1.Development\EarlyExit');
 
-    path='C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\Data\NewUniverse\';
+    path='C:\Spectrion\Data\NewUniverse\';
 elseif strcmp(location,'Coutts')
     addpath(genpath('O:\langyu\Reading\AlgorithmTrading_Chan_(2013)\jplv7'));
     addpath('O:\langyu\Reading\AlgorithmTrading_Chan_(2013)');

@@ -6,7 +6,7 @@ location='Home';
 
     if strcmp(location,'Home')
         addpath(genpath('C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\4. Alphas (new)'));
-        path='C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\Data\NewUniverse\';
+        path='C:\Spectrion\Data\NewUniverse\';
     elseif strcmp(location,'Coutts')
         addpath(genpath('O:\langyu\Reading\AlgorithmTrading_Chan_(2013)\jplv7'));
         addpath('O:\langyu\Reading\AlgorithmTrading_Chan_(2013)');
@@ -24,7 +24,7 @@ cl=cl(idxStart:idxEnd, :); cl=fillMissingData(cl);
 op=op(idxStart:idxEnd, :);cl=fillMissingData(cl);
 
 %% Cal Market Beta
-MIfile='C:\Users\Langyu\Desktop\Dropbox\GU\1.Investment\Data\NewUniverse\SPY_MarketIndex.csv';
+MIfile=strcat(path, 'SPY_MarketIndex.csv');
 spy=xlsread(MIfile);
 spy=spy(idxStart:idxEnd,2); %load spy close price
 spyret=(spy-backshift(1,spy))./backshift(1,spy); spyret(isnan(spyret))=0;
